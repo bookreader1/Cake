@@ -210,3 +210,39 @@ body {
         z-index: 100;
     }
 }
+
+
+/* ===== DARK NIGHT THEME ===== */
+html, body {
+    background: #000 !important;
+    color: #eee;
+}
+
+/* Remove old yellow background */
+body {
+    background: #000 !important;
+}
+
+/* Canvas stays transparent over black */
+#garden {
+    background: transparent;
+}
+
+/* Birthday message / quote */
+#loveu {
+    color: #ffb6c1; /* soft pink for warmth */
+}
+
+/* Footer / text */
+#copyright,
+#words,
+#messages {
+    color: #ccc;
+}
+
+/* Hide scroll glow on mobile */
+body {
+    overscroll-behavior: none;
+}
+
+
