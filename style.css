@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: digit;
     src: url('digital-7_mono.ttf') format("truetype");
@@ -110,33 +111,6 @@ body {
     font-size: 12px;
 }*/
 
-#code .string {
-    color: #2a36ff;
-}
-
-#code .keyword {
-    color: #7f0055;
-    font-weight: bold;
-}
-
-#code .placeholder {
-    margin-left: 15px;
-}
-
-#code .space {
-    margin-left: 7px;
-}
-
-#code .comments {
-    color: #3f7f5f;
-}
-
-#copyright {
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-    color: #666;
-}
 
 #errorMsg {
     width: 100%;
@@ -245,4 +219,33 @@ body {
     overscroll-behavior: none;
 }
 
+#code {
+    color: #ffdde1;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
+#secretCode {
+    background: rgba(255,255,255,0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+#copyBtn {
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+#copyBtn:hover {
+    transform: scale(1.2);
+}
+
+
+#code {
+    padding: 20px 20px 20px 50px;
+    text-align: left;
+}
