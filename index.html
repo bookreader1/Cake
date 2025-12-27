@@ -59,20 +59,22 @@
 			
 			
 			<div id="code">
-    <span class="comments">/**</span><br />
-    <span class="space"/> <span class="comments">* 🌸 Riddhi's Birthday Magic 🌸</span><br />
-    <span class="space"/> <span class="comments">* Today, the world gets a little brighter because of YOU.</span><br />
-    <span class="space"/> <span class="comments">* Here’s a sprinkle of joy, hugs, and a cake just for you!</span><br />
-    <span class="space"/> <span class="comments">*/</span><br />
+    🎂 <b>Riddhi’s Birthday Terminal</b> 🎂<br/><br/>
 
-    <span class="comments">🎉 Make a wish, blow the candles, and let the confetti fly! 🎉</span><br />
-    <span class="comments">🍰 Cake: Chocolate with extra sprinkles</span><br />
-    <span class="comments">🌟 Hugs: Infinite</span><br />
-    <span class="comments">💌 Love: 100% guaranteed</span><br />
-    <span class="comments">🎈 Balloons: Floating everywhere</span><br />
-    <span class="comments">✨ Smile: Must be worn all day</span><br />
+    ✨ Today the universe pauses for you<br/>
+    💫 Smiles are mandatory<br/>
+    🍰 Cake is unlimited<br/>
+    💖 Friendship has no expiry date<br/><br/>
 
-    <span class="comments">// 🎂 Happy Birthday, Riddhi!!! 🎉</span>
+    🔐 Special Code:
+    <span id="secretCode">bihari_vempire</span>
+    <span id="copyBtn" title="Copy code">📋(Copy)</span><br/><br/>
+
+    🎉 May your days be soft,<br/>
+    🌸 your nights peaceful,<br/>
+    🌈 and your dreams fearless.<br/><br/>
+
+    ❤️ Happy Birthday, Riddhi ❤️
 </div>
 
 			<div id="loveHeart">
@@ -142,5 +144,24 @@
 			});
 		}
 	</script>
+	
+	<script>
+document.addEventListener("click", async function (e) {
+    if (e.target && e.target.id === "copyBtn") {
+        const secretCode = document.getElementById("secretCode");
+        if (!secretCode) return;
+
+        try {
+            await navigator.clipboard.writeText(secretCode.innerText);
+            e.target.innerText = "✅";
+            setTimeout(() => {
+                e.target.innerText = "📋";
+            }, 1500);
+        } catch (err) {
+            alert("Copy not supported on this browser");
+        }
+    }
+});
+</script>
 </body>
 </html>
